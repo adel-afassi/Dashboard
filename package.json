@@ -1,0 +1,30 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "epitech dashboard",
+  "main": "dashboard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dashboard.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.epitech.eu:/adel.afassi@epitech.eu/DEV_dashboard_2018"
+  },
+  "author": "adel afassi",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "node.js": "0.0.0",
+    "promise": "^8.0.2",
+    "pug": "^2.0.3",
+    "request": "^2.88.0",
+    "require": "^2.4.20",
+    "stat": "0.0.5",
+    "body-parser": "1.18.3"
+  },
+  "devDependencies": {},
+  "keywords": []
+}

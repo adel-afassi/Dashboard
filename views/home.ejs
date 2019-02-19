@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Website CSS style -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script type="text/javascript" src="/css/jquery-3.3.1.js"></script>
+        <!-- Website Font style -->
+        <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/design.css">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+        <!-- Google Fonts -->
+      </head>
+    <body>
+    </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Dashboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+
+    <div class="container">
+        </div>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="square-service-block">
+                    <a href="#">
+                        <div class="ssb-icon"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+                        <h2 class="ssb-title">Weather Pressure</h2>
+                        <form action="/weatherPressure" method="post">
+                            <div class="form-group">
+                                <label for="email_id" class="control-label">Which city ?</label>
+                                <input type="text" class="form-control" id="email_id" name="city" placeholder="input">
+                            </div>
+                            <div class="form-group"> <!-- Submit button !-->
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            <% if(pressure !== null){ %>
+                                <p><%= pressure %></p>
+                            <% } %>
+                            <% if(error !== null){ %>
+                                <p><%= error %></p>
+                            <% } %>
+                        </form>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="square-service-block">
+                    <a href="#">
+                        <div class="ssb-icon"> <i class="fa fa-bolt" aria-hidden="true"></i> </div>
+                        <h2 class="ssb-title">Weather Wind</h2>
+                        <form action="/weatherWind" method="post">
+                            <div class="form-group">
+                                <label for="email_id" class="control-label">Which city ?</label>
+                                <input type="text" class="form-control" id="email_id" name="city" placeholder="input">
+                            </div>
+                            <div class="form-group"> <!-- Submit button !-->
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            <% if(wind !== null){ %>
+                                <p><%= wind %></p>
+                            <% } %>
+                            <% if(error !== null){ %>
+                                <p><%= error %></p>
+                            <% } %>
+                        </form>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="square-service-block">
+                    <a href="#">
+                        <div class="ssb-icon"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+                        <h2 class="ssb-title">Weather Humidity</h2>
+                        <form action="/weatherHumidity" method="post">
+                            <div class="form-group">
+                                <label for="email_id" class="control-label">Which City ?</label>
+                                <input type="text" class="form-control" id="email_id" name="city" placeholder="input">
+                            </div>
+                            <div class="form-group"> <!-- Submit button !-->
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            <% if(humidity !== null){ %>
+                                <p><%= humidity %></p>
+                            <% } %>
+                            <% if(error !== null){ %>
+                                <p><%= error %></p>
+                            <% } %>
+                        </form>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="square-service-block">
+                    <a href="#">
+                        <div class="ssb-icon"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+                        <h2 class="ssb-title">Weather Temp</h2>
+                        <form action="/weatherTemp" method="post">
+                            <div class="form-group">
+                                <label for="email_id" class="control-label">Which City ?</label>
+                                <input type="text" class="form-control" id="email_id" name="city" placeholder="input">
+                            </div>
+                            <div class="form-group"> <!-- Submit button !-->
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            <% if(temp !== null){ %>
+                                <p><%= temp %></p>
+                            <% } %>
+                            <% if(error !== null){ %>
+                                <p><%= error %></p>
+                            <% } %>
+                        </form>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="square-service-block">
+                    <a href="#">
+                        <div class="ssb-icon"><i class="fa fa-youtube-square" aria-hidden="true"></i></div>
+                        <h2 class="ssb-title">Youtube Views</h2>
+                        <form action="/youtubeViews" method="post">
+                            <div class="form-group">
+                                <label for="email_id" class="control-label">Which video ?</label>
+                                <input type="text" class="form-control" id="email_id" name="views" placeholder="input">
+                            </div>
+                            <div class="form-group"> <!-- Submit button !-->
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            <% if(views !== null){ %>
+                                <p><%= views %></p>
+                            <% } %>
+                            <% if(error !== null){ %>
+                                <p><%= error %></p>
+                            <% } %>
+                        </form>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="square-service-block">
+                    <a href="#">
+                        <div class="ssb-icon"><i class="fa fa-youtube-square" aria-hidden="true"></i></div>
+                        <h2 class="ssb-title">Youtube Likes</h2>
+                        <form action="/youtubeLikes" method="post">
+                            <div class="form-group">
+                                <label for="email_id" class="control-label">Which video ?</label>
+                                <input type="text" class="form-control" id="email_id" name="likes" placeholder="input">
+                            </div>
+                            <div class="form-group"> <!-- Submit button !-->
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            <% if(likes !== null){ %>
+                                <p><%= likes %></p>
+                            <% } %>
+                            <% if(error !== null){ %>
+                                <p><%= error %></p>
+                            <% } %>
+                        </form>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="square-service-block">
+                    <a href="#">
+                        <div class="ssb-icon"><i class="fa fa-youtube-square" aria-hidden="true"></i></div>
+                        <h2 class="ssb-title">Youtube Dislikes</h2>
+                        <form action="/youtubeDislikes" method="post">
+                            <div class="form-group">
+                                <label for="email_id" class="control-label">Which video ?</label>
+                                <input type="text" class="form-control" id="email_id" name="dislike" placeholder="input">
+                            </div>
+                            <div class="form-group"> <!-- Submit button !-->
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            <% if(dislike !== null){ %>
+                                <p><%= dislike %></p>
+                            <% } %>
+                            <% if(error !== null){ %>
+                                <p><%= error %></p>
+                            <% } %>
+                        </form>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="square-service-block">
+                    <a href="#">
+                        <div class="ssb-icon"><i class="fa fa-youtube-square" aria-hidden="true"></i></div>
+                        <h2 class="ssb-title">Youtube Comments</h2>
+                        <form action="/youtubeComments" method="post">
+                            <div class="form-group">
+                                <label for="email_id" class="control-label">Which video ?</label>
+                                <input type="text" class="form-control" id="email_id" name="comment" placeholder="input">
+                            </div>
+                            <div class="form-group"> <!-- Submit button !-->
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            <% if(comment !== null){ %>
+                                <p><%= comment %></p>
+                            <% } %>
+                            <% if(error !== null){ %>
+                                <p><%= error %></p>
+                            <% } %>
+                        </form>
+                    </a>
+                </div>
+            </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        </div>
+    </body>
+</html>
